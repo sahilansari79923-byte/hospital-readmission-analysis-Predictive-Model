@@ -125,11 +125,6 @@ High medication counts follow the same pattern. 20+ medications: 10.24% readmiss
 
 ---
 
-## Limitations
-
-A1Cresult and max_glu_serum got dropped because over 40% of values were missing. For a diabetic readmission study, those are arguably the two most clinically relevant features — losing them hurts the analysis. The 91:9 class imbalance in readmission vs non-readmission is the other issue, and worth keeping in mind when reading any rates.
-
----
 
 ## Tools Used
 
