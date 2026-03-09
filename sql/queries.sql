@@ -1,8 +1,4 @@
--- ============================================================
--- SQL Analysis — Hospital Readmission (SQLite)
--- Run via: python src/run_sql.py
--- ============================================================
-
+-- SQL Analysis — Hospital Readmission (MYSql workbench)
 
 -- 1. Overall readmission rate
 SELECT
