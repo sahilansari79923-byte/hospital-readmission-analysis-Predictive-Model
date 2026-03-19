@@ -2,12 +2,21 @@
 
 > 🔗 **[Live Dashboard](https://sahilansari79923-byte.github.io/webpage/)**
 
+## Problem Statement 
 A diabetic patient gets discharged. Within 30 days, they're back. Why? That's what this project digs into. The dataset covers 130 US hospitals from 1999–2008 — around 100,000 records, 50 columns.
 
-Built as a portfolio project while switching into data analytics. Pipeline goes: raw data → cleaning (Python + Excel) → SQL queries → Power BI dashboard → charts.
+Pipeline goes: raw data → cleaning (Python + Excel) → SQL queries → Power BI dashboard → charts.
 
 ---
+## What We Found 
 
+* Overall readmission rate: 8.84% — 6,150 patients out of 69,560 were back within 30 days.
+* Age is the clearest predictor. The 80–90 group readmitted at 10.36% — over double the rate for patients under 40. Nothing dramatic happens until around 60, then it starts climbing.
+* Insulin dose cuts are a warning sign. Patients whose insulin was reduced had a 10.42% readmission rate. That's worse than patients on no insulin at all (8.17%). A dose reduction that doesn't stick leaves glucose unstable, and unstable glucose sends people back fast.
+* Diagnosis count tracks almost perfectly with readmission risk. One diagnosis: 3.2%. Nine or more: ~9.8%. More conditions means messier discharge planning — things fall through the gaps.
+* High medication counts tell a similar story. 20+ medications: 10.24%. Under 10: 7.04%. That gap probably reflects how sick someone already is, not the drugs themselves.
+
+---
 ## Project Structure
 
 ```
@@ -51,12 +60,6 @@ Download the CSV (~23MB) and drop it in `data/raw/diabetic_data.csv`.
 ---
 
 ## How to Run
-
-**Python cleaning + charts:**
-```bash
-python src/cleaning.py     # outputs data/processed/diabetic_cleaned.csv
-python src/eda.py          # saves charts to charts/
-```
 
 **Excel cleaning:**
 1. Open `excel/diabetic_cleaning.xlsx`
